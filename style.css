@@ -30,7 +30,7 @@ body {
 }
 
 nav {
-    width: 70vw;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -59,7 +59,7 @@ nav img {
 }
 
 #hero> :first-child {
-    font-weight: 900;
+    font-weight: 900px;
     font-size: 50px;
     text-align: center;
 }
@@ -290,26 +290,72 @@ footer a {
     margin-top: 10px;
 }
 
-@media screen and (max-width:1000px) {
-    nav{
+@media screen and (max-width:800px) {
+    nav {
         width: 90vw;
     }
+
+    nav img {
+        width: 6rem;
+    }
+
+    .btn_select {
+        height: 25px;
+        width: 5rem;
+        padding: 0px;
+    }
+
+    .btn_select>i {
+        height: 10px;
+        font-size: 10px;
+    }
+
+    .btn_select>select {
+        font-size: 10px;
+    }
+
+    .btn_red_sm {
+        height: 24px;
+        width: 4rem;
+        font-size: 11px;
+        padding: 0px;
+    }
+
     .first_container {
         width: 80vw;
         flex-wrap: wrap;
         flex-direction: column;
-        gap:15px;
+        gap: 25px;
+        padding: 0px;
+        height: 80vh;
+        margin-bottom: 35px;
     }
 
-    .secImg img .secImg1 img {
-        width: 310px;
+    .secImg img {
+        width: 300px;
+        overflow: hidden;
+        padding-top: 20px;
     }
 
-    .secImg video .secImg1 video {
-        width: 310px;
+    .secImg1 img {
+        width: 325px;
+
+        overflow: hidden;
     }
 
-    .seperation .seperation1 {
+    .secImg video {
+        height: 47%;
+        width: 300px;
+        overflow: hidden;
+    }
+
+    .secImg1 video {
+        height: 115px;
+        overflow: hidden;
+    }
+
+    .seperation,
+    .seperation1 {
         z-index: 10;
     }
 
@@ -320,17 +366,19 @@ footer a {
     .first_container>div :nth-child(2) {
         font-size: 18px;
     }
+
     #hero> :first-child {
         font-size: 32px;
     }
-    
+
     #hero> :nth-child(2) {
         font-size: 18px;
     }
-    
+
     #hero> :nth-child(3) {
-        font-size: 18px; 
+        font-size: 18px;
     }
+
     .main_btn {
         display: flex;
         flex-direction: column;
@@ -338,12 +386,24 @@ footer a {
         align-items: center;
         gap: 15px;
     }
+    .main_btn>input{
+        width:8rem;
+    }
+
+    .faq p {
+        font-size: 30px;
+    }
+
+    .faq span {
+        font-size: 20px;
+    }
+
 }
-@media screen and (max-width:800px){
-    .footer
-    {
+
+@media screen and (max-width:800px) {
+    .footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap:10%;
+        gap: 10%;
     }
 }
